@@ -2,6 +2,7 @@ import React from 'react';
 import './navbar.css'; 
 import backwardIcon from './Vector 522.png'; // Replace with the actual path to your backward icon image
 import forwardIcon from './Vector 521.png'; // Replace with the actual path to your forward icon image
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   // const { currentPage } = props;
@@ -10,11 +11,11 @@ const Navbar = (props) => {
     <div>
     <div className="navbar">
       <div className="navbar__left">
-      <a href='./'>
+      <Link href='/'>
         <span className="navbar__logo">CY</span>
         <span className="navbar__slogo">S</span>
         <span className="navbar__logo">COM</span>
-      </a>
+      </Link>
       </div>
       <div className="navbar__right">
         <span className={`navbar__index ${props.currentPage ? 'underline' : ''}`}>

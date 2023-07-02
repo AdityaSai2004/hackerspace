@@ -6,7 +6,8 @@
     src: url(/src/components/speaker/fonts/mrRobot.ttf);
 }
 #container{
-  background-image: url(/src/components/speaker/images/red-background.png);
+    /* background-image: url(/src/components/speaker/images/red-background.png); */
+    /* set top padding only if mobile */
     width: 100vw;
     height: 100vh;
     margin: auto;
@@ -113,4 +114,8 @@
     .profiles {
       flex-wrap: wrap;
     }
+    #container {
+      /* set top padding to 50% */
+      padding-top: 50%;
+    }  
   }
