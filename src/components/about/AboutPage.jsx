@@ -1,4 +1,4 @@
-const AboutPage = () => {
+const AboutPage = (props) => {
 
     const blackBackgroundStyle = {
     backgroundColor: 'black',
@@ -41,6 +41,9 @@ const AboutPage = () => {
         fontWeight: '700',
 
     } 
+    let temp=props.name
+    let content=props.content
+
 
     return (
         <>
@@ -53,11 +56,11 @@ const AboutPage = () => {
                     </div> */}
                     </div>
                     <div >               
-                        <p style={headStyle}>About Event</p>
+                        <p style={headStyle}>{temp}</p>
                     </div>
 
                     <div>
-                        <p style={textStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p style={textStyle}>{content}</p>
                     </div>
                 </div>
                 {/* <div style={{position: 'relative', width: '93%', height: 90,}}><img src={backButton} style={{position: 'absolute', width: '45px', height: '45px', bottom: 0, right: 0}} /></div> */}

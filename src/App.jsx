@@ -1,8 +1,5 @@
 import React, { Suspense, useEffect, useRef } from "react";
-// import { Canvas, useFrame } from "@react-three/fiber";
-// import { OrbitControls, useGLTF, useAnimations } from "@react-three/drei";
 import './App.css';
-// import Scene from "./Scene";
 import Navbar from './components/navBar/nav'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Speaker from './components/speaker/Speakers'
@@ -12,7 +9,10 @@ import Sponsors from './components/sponsors/sponsors'
 import Footer from './components/footer/Footer'
 import About from './components/about/AboutPage'
 
+
 export default function App() {
+  let title='HackerSpace'
+  let landingPageContent='Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea repudiandae nam vitae! Est aperiam saepe quae iste eius reprehenderit.'
   return (
     <div className="wrapper" style={{ width: "100vw", height: "100vh" }}>
       {/* for now commenting the model */}
@@ -26,10 +26,11 @@ export default function App() {
       {/* <Sponsors /> */}
       {/* <About /> */}
 
+
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<><Navbar currentPage='1' /><Footer urlb='/' urlf='/about'/></>} />
-          <Route path='about' element={<><Navbar currentPage='2' /><About /><Footer urlb='/' urlf='/speaker' /></>} />
+          <Route path='/' element={<><Navbar currentPage='1' /><About name={title} content={landingPageContent}/><Footer urlb='/' urlf='/about'/></>} />
+          <Route path='about' element={<><Navbar currentPage='2' /><About name='About Event' content={landingPageContent}/><Footer urlb='/' urlf='/speaker' /></>} />
           <Route path='speaker' element={<><Navbar currentPage='3' /><Speaker /><Footer urlb='/about' urlf='/sponsors'/></>} />
           <Route path='sponsors' element={<><Navbar currentPage='4' /><Sponsors /><Footer urlb='/speaker' urlf='/faq'/></>} />
           <Route path='faq' element={<><Navbar currentPage='5' /><Faq /><Footer urlb='/sponsors' urlf='faq' /></>} />
