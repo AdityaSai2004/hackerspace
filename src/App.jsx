@@ -1,8 +1,8 @@
 import React, { Suspense, useEffect, useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, useGLTF, useAnimations } from "@react-three/drei";
+// import { Canvas, useFrame } from "@react-three/fiber";
+// import { OrbitControls, useGLTF, useAnimations } from "@react-three/drei";
 import './App.css';
-import Scene from "./Scene";
+// import Scene from "./Scene";
 import Navbar from './components/navBar/nav'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Speaker from './components/speaker/Speakers'
