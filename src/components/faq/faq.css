@@ -5,7 +5,7 @@ body {
   background: linear-gradient(180deg, #7b0000 0%, #121212 100%);
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
