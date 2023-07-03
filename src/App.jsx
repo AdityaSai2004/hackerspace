@@ -19,11 +19,11 @@ export default function App() {
     <div className="wrapper" style={{ width: "100vw", height: "100vh" }}>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<><Navbar currentPage='1' /><StartPage/><Footer urlb='/' urlf='/about'/></>} />
-          <Route path='about' element={<><Navbar currentPage='2' /><About name='About Event' content={landingPageContent}/><Footer urlb='/' urlf='/speaker' /></>} />
-          <Route path='speaker' element={<><Navbar currentPage='3' /><Speaker /><Footer urlb='/about' urlf='/sponsors'/></>} />
-          <Route path='sponsors' element={<><Navbar currentPage='4' /><Sponsors /><Footer urlb='/speaker' urlf='/faq'/></>} />
-          <Route path='faq' element={<><Navbar currentPage='5' /><Faq /><Footer urlb='/sponsors' urlf='/' /></>} />
+          
+          <Route path='/' element={<><Navbar currentPage='1' /><About name='Hacker Space' content={landingPageContent}/><Footer urlb='/' urlf='/speaker' /></>} />
+          <Route path='speaker' element={<><Navbar currentPage='2' /><Speaker /><Footer urlb='/' urlf='/sponsors'/></>} />
+          <Route path='sponsors' element={<><Navbar currentPage='3' /><Sponsors /><Footer urlb='/speaker' urlf='/faq'/></>} />
+          <Route path='faq' element={<><Navbar currentPage='4' /><Faq /><Footer urlb='/sponsors' urlf='/' /></>} />
           <Route path='clock' element={<Clock />} />
         </Routes>
       </BrowserRouter>
