@@ -1,4 +1,4 @@
-const AboutPage = (props) => {
+const startPage = (props) => {
 
     const blackBackgroundStyle = {
     backgroundColor: 'black',
@@ -51,7 +51,6 @@ const AboutPage = (props) => {
     - Gain hands-on experience in these specialized domains<br/>
     - Participate in a thrilling Capture-The-Flag (CTF) challenge</p>;
 
-
     return (
         <>
             <div className="App" style={blackBackgroundStyle}>
@@ -71,4 +70,4 @@ const AboutPage = (props) => {
     );
 };
 
-export default AboutPage;
+export default startPage;
