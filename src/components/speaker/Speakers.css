@@ -19,9 +19,9 @@
     overflow: auto;
 }
 #headline {
-    padding-top: 7%;
-    font-family:'MrRobot', Times, serif;
-    background-color: transparent;
+  font-family: 'MrRobot', Times, serif;
+  background-color: transparent;
+  margin-top: 3em;
 }
 .profiles {
     display: flex;

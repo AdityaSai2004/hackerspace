@@ -3,21 +3,23 @@ import "./navbar.css";
 import backwardIcon from "./Vector 522.png"; // Replace with the actual path to your backward icon image
 import forwardIcon from "./Vector 521.png"; // Replace with the actual path to your forward icon image
 import { Link } from "react-router-dom";
+import logo from "./Logo-red-new.png"
 
 const Navbar = (props) => {
   // const { currentPage } = props;
 
-  let logo = "https://cyscomvit.com/assets/images/logo.png";
+  
   let style = {
-    width: "70px",
-    height: "70px",
+    width: "90px",
+    height: "90px",
     positon: "relative",
+    background:"transparant",
     // margin:'2em'
     paddingTop: `${props.value}em`,
   };
 
   return (
-    <div>
+    <div className="container">
       <div className="navbar">
         <div className="navbar__left">
           <a href="https://cyscomvit.com/">
@@ -39,6 +41,9 @@ const Navbar = (props) => {
           <span className={`navbar__total`}> 05</span>
         </div>
       </div>
+    <div className="divAtMobile">
+      <img src={logo} alt="" className='imgAtMobile'/>
+    </div>
     </div>
   );
 };
