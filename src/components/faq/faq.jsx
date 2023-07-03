@@ -95,14 +95,14 @@ const Accordion = () => {
   return (
     <div className="wrapper">
       <div className="head">
-        <h1>Frequently asked Questions</h1>
+        <h1 className="questions">Frequently asked Questions</h1>
       </div>
 
       <div className="accordion">
         {Data.map((item, i) => (
           <>
             <div className="item" key={i}>
-              <div className="title" onClick={() => FunctionWrapper(i)}>
+              <div className="titles" onClick={() => FunctionWrapper(i)}>
                 <h2>{item.Question}</h2>
                 <span className="circle">{selected === i ? "-" : ">"}</span>
               </div>

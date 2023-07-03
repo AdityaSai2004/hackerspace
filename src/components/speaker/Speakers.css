@@ -22,6 +22,7 @@
   font-family: 'MrRobot', Times, serif;
   background-color: transparent;
   margin-top: 3em;
+  display: inline;
 }
 .profiles {
     display: flex;
@@ -30,11 +31,13 @@
     background-color: transparent;
 }
 #intro-para {
+  display: block;
     padding: 2%;
-    width: 50%;
+    width: 40%;
     background-color: transparent;
     text-align: center;
     font-size: 17px;
+    justify-content: center;
     
 }
 .flip-card {
@@ -117,8 +120,23 @@
     .profiles {
       flex-wrap: wrap;
     }
-    #container {
-      /* set top padding to 50% */
-      /* padding-top: 50%; */
-    }  
+    #headline {
+      font-family: 'MrRobot', Times, serif;
+      background-color: transparent;
+      margin-top: 1em;
+      align-content: center;
+      font-size: 2rem
+    }
+      
+
+    #intro-para {
+      display: block;
+        padding: 2%;
+        width: 90%;
+        background-color: transparent;
+        text-align: center;
+        font-size: 17px;
+        justify-content: center;
+        
+    }
   }

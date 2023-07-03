@@ -40,9 +40,8 @@ const Navbar = (props) => {
           <span className={`navbar__total`}> 04</span>
         </div>
       </div>
-      <div className="divAtMobile">
+      
         <img src={logo} alt="" className="imgAtMobile" />
-      </div>
     </div>
   );
 };

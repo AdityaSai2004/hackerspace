@@ -3,7 +3,7 @@
 .navbar {
   position: fixed;
   /* top: 15px; */
-  left: 20px;
+  left: 34px;
   width: 95%;
   display: flex;
   justify-content: space-between;
@@ -191,11 +191,13 @@
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .imgAtMobile {
-    width: 30%;
-    height: 30%;
-    display: block;
+    padding-top: 50px;
+    margin-top: 60px;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
     margin: auto;
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
   .container {
     display: flex;
@@ -240,7 +242,7 @@
     margin-right: auto;
     position: sticky;
 
-    /* display: none; */
+    display: none;
   }
 
   .navbar__name {

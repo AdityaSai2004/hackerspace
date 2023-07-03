@@ -1,9 +1,12 @@
 const AboutPage = (props) => {
   const blackBackgroundStyle = {
     backgroundColor: "black",
+    display:"flex",
+    flexDirection: "column",
+    justifyContent: "center",
   };
   const aboutStyle = {
-    display: "flex",
+    display: "block",
     flexDirection: "column",
     height: "100vh",
     textAlign: "start",
@@ -17,6 +20,8 @@ const AboutPage = (props) => {
     fontFamily: "MrRobot",
     fontWeight: "400",
     margin: "0",
+    display:"block",
+    paddingTop:'2rem'
   };
 
   const textStyle = {
@@ -25,6 +30,7 @@ const AboutPage = (props) => {
     fontFamily: "Poppins",
     fontWeight: "400",
     width: "70%",
+    display:"block",
   };
 
   const pageno = {
@@ -52,28 +58,29 @@ const AboutPage = (props) => {
 
   return (
     <>
-      <div className="App" style={blackBackgroundStyle}>
+      <div className="apps" style={blackBackgroundStyle}>
         <div className="about" style={aboutStyle}>
           <div
             style={{
-              display: "flex",
+              
               justifyContent: "space-between",
               alignItems: "center",
               marginTop: "100px",
+              display:"block"
             }}
           ></div>
-          <div>
+          <div style={{display:"block"}}>
             <p style={headStyle}>{temp}</p>
           </div>
 
-          <div>
+          <div style={{display:"block"}}>
             <span style={textStyle}>{content}</span>
           </div>
           <a
             href="https://www.vitchennaievents.com/conf1/index.php?eventid=1522"
             style={{ paddingBottom: "10%" }}
           >
-            <button className="register">Register</button>
+            <button className="register" style={{display:"block"}}>Register</button>
           </a>
         </div>
       </div>

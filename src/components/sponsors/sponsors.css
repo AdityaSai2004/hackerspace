@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+*{
+  padding: 0;
+  margin: 0;
+}
+
 #logo {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -16,11 +21,11 @@
 }
 
 .sponsors {
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   overflow: auto;
 }
@@ -35,20 +40,19 @@
   color: #fc0101;
 
   margin-bottom: 2rem;
-  margin-top: 20vh;
+  margin-top: 55vh;
 }
 
 .sponsors p {
   font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21.4235px;
-  line-height: 160%;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  width: 33.33vw;
-  margin-bottom: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.4235px;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    /* width: 33.33vw; */
+    margin-bottom: 3rem;
 }
 
 .cards {
@@ -85,7 +89,12 @@
   padding: 2%;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1920px) {
+  .title{
+    /* if changing this value, it causes trouble in faq section */
+    margin-top: 0vh;
+  }
+
   .cards {
     flex-direction: column;
     align-items: center;
@@ -97,13 +106,51 @@
   }
 
   .sponsors p {
-    width: 80vw;
+    width: auto;
+    height: 100vh;
+    /* margin-top: 0.5em; */
+    padding-top: 2em;
+    justify-content: center;
+  }
+  .plat-spon {
+    display: flex;
+    align-items: center;
+    padding: 2%;
   }
 }
 
-@media (max-width: 500px) {
+
+@media (max-width: 1440px) {
+
+  .title{
+    margin-top: 45vh;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    margin-bottom: 2rem;
+    width: 50vw;
+  }
+
+  .sponsors p {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+  .plat-spon {
+    align-items: center;
+    padding: 2%;
+  }
+}
+
+@media (max-width: 768px) {
   #title {
     font-size: 3.2rem;
+    margin-top: 7vh;
   }
 
   .box {
@@ -124,5 +171,9 @@
     position: absolute;
     left: 100px;
     top: 70px;
+  }
+  .plat-spon {
+    align-items: center;
+    padding: 2%;
   }
 }
