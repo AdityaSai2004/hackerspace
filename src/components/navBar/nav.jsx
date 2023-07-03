@@ -3,17 +3,16 @@ import "./navbar.css";
 import backwardIcon from "./Vector 522.png"; // Replace with the actual path to your backward icon image
 import forwardIcon from "./Vector 521.png"; // Replace with the actual path to your forward icon image
 import { Link } from "react-router-dom";
-import logo from "./Logo-red-new.png"
+import logo from "./Logo-red-new.png";
 
 const Navbar = (props) => {
   // const { currentPage } = props;
 
-  
   let style = {
     width: "90px",
     height: "90px",
     positon: "relative",
-    background:"transparant",
+    background: "transparant",
     // margin:'2em'
     paddingTop: `${props.value}em`,
   };
@@ -38,12 +37,12 @@ const Navbar = (props) => {
             {props.currentPage.toString().padStart(2, "0")}
           </span>
           <span className="navbar__separator"> /</span>
-          <span className={`navbar__total`}> 05</span>
+          <span className={`navbar__total`}> 04</span>
         </div>
       </div>
-    <div className="divAtMobile">
-      <img src={logo} alt="" className='imgAtMobile'/>
-    </div>
+      <div className="divAtMobile">
+        <img src={logo} alt="" className="imgAtMobile" />
+      </div>
     </div>
   );
 };
