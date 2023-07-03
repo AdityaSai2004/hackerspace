@@ -202,13 +202,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: max-content;
+    /* height: max-content; */
+    width: 100%;
   }
   .divAtMobile {
     padding: 0;
     margin: 0;
     /* display: none; */
     height: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .navbar {
