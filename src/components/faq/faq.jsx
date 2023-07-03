@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./faq.css";
+import styled, { keyframes } from "styled-components";
 
 const Data = [
   {
@@ -9,27 +10,54 @@ const Data = [
       "No prior experience or knowledge in cybersecurity is required to attend HackerSpace. The event is designed to provide a comprehensive learning experience for participants at all levels, from beginners to advanced learners.",
   },
   {
-    Question:"Can I collaborate with others during the CTF challenge?",
+    Question: "Can I collaborate with others during the CTF challenge?",
     Answer:
-    "Yes, collaboration among participants is encouraged during the CTF challenge. You can form team of 1-3 participant(s) and work together to solve the challenges. It's a great opportunity to learn from each other and enhance your problem-solving skills."
+      "Yes, collaboration among participants is encouraged during the CTF challenge. You can form team of 1-3 participant(s) and work together to solve the challenges. It's a great opportunity to learn from each other and enhance your problem-solving skills."
   },
   {
     Question: "Is there a registration fee for HackerSpace?",
     Answer:
-    "Yes, there is a registration fee of Rs.150/-  for HackerSpace. "
+      "Yes, there is a registration fee of Rs.150/-  for HackerSpace. "
   },
   {
     Question: "Will certificates be provided to participants?",
     Answer:
-    "Yes, certificates of participation will be provided to all attendees of HackerSpace. These certificates will serve as a recognition of your active participation and engagement in the event." 
+      "Yes, certificates of participation will be provided to all attendees of HackerSpace. These certificates will serve as a recognition of your active participation and engagement in the event."
   },
   {
     Question: "What should I bring with me to HackerSpace?",
     Answer:
-    "Participants are encouraged to bring their own laptops for the hands-on activities and challenges. Additionally, it is recommended to bring a notebook and pen for taking notes during the workshop sessions."
+      "Participants are encouraged to bring their own laptops for the hands-on activities and challenges. Additionally, it is recommended to bring a notebook and pen for taking notes during the workshop sessions."
   },
-  
+
 ];
+
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+
+const fadeOut = keyframes`
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+    ${'' /* transition: transform 1s ease-in-out; */}
+  }
+`;
+
+
 const Accordion = () => {
   const [selected, setSelected] = useState(null);
 
@@ -44,6 +72,10 @@ const Accordion = () => {
     setSelected(i);
     console.log("i");
   };
+
+
+  const Answer = styled.div`
+  animation: ${({ showCard }) => (showCard ? fadeIn : fadeOut)} 0.5s ease-in-out;`;
 
   const changeStyle = () => {
     var Element = document.getElementsByClassName("item");
@@ -74,9 +106,9 @@ const Accordion = () => {
                 <h2>{item.Question}</h2>
                 <span className="circle">{selected === i ? "-" : ">"}</span>
               </div>
-              <div className={selected === i ? "content-show" : "content"}>
+              <Answer showCard={setSelected} className={selected === i ? "content-show" : "content"}>
                 <p>{item.Answer}</p>
-              </div>
+              </Answer>
             </div>
             <br />
           </>
