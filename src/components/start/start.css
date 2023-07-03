@@ -1,13 +1,41 @@
 @font-face {
-    font-family: 'MrRobot';
-    src: url(./fonts/mrRobot.ttf);
+  font-family: "MrRobot";
+  src: url(./fonts/mrRobot.ttf);
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url(./fonts/Poppins.ttf);
+  font-family: "Poppins";
+  src: url(./fonts/Poppins.ttf);
 }
 
-body{
-    overflow: auto;
+.navbar {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+  z-index: 999;
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  background-color: transparent;
+  padding-left: 0px;
+}
+
+.navbar__slogo {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff4a4a;
+  background-color: transparent;
 }
