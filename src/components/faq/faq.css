@@ -76,8 +76,8 @@ h1 {
   cursor: pointer;
 }
 
-.head{
-  margin-top:7% ;
+.head {
+  padding-top: 15%;
 }
 
 .circle {
@@ -130,5 +130,5 @@ h1 {
   .head {
     /* set top padding to 50% */
     padding-top: 50%;
-  }  
+  }
 }
