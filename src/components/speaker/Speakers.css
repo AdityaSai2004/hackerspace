@@ -19,6 +19,7 @@
     overflow: auto;
 }
 #headline {
+    padding-top: 7%;
     font-family:'MrRobot', Times, serif;
     background-color: transparent;
 }

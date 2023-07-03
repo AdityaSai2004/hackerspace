@@ -61,8 +61,12 @@ const startPage = (props) => {
                         <p style={headStyle}>{temp}</p>
                     </div>
 
-                    <div>
-                        <span style={textStyle}>{content}</span>
+                    <div style={textStyle}>
+                        <span >{content}</span>
+                        <br/>
+                        <a href="https://www.vitchennaievents.com/conf1/index.php?eventid=1522">
+                            <button>Register</button>
+                        </a>
                     </div>
                 </div>
             </div>           

@@ -76,6 +76,10 @@ h1 {
   cursor: pointer;
 }
 
+.head{
+  margin-top:7% ;
+}
+
 .circle {
   margin: 20px 10px;
   height: 50px;
@@ -119,4 +123,12 @@ h1 {
   /* max-height: 9999px; */
   margin-bottom: 20px;
   transition: all 0.5s cubic-bezier(0, 1, 0.1);
+}
+
+@media only screen and (max-width: 970px) {
+  /* For mobile phones: */
+  .head {
+    /* set top padding to 50% */
+    padding-top: 50%;
+  }  
 }
