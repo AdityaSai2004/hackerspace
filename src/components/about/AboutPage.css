@@ -11,6 +11,7 @@
 body {
   overflow: auto;
   overflow-x: hidden;
+  text-align: center;
 }
 
 .register {

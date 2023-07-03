@@ -129,6 +129,6 @@ h1 {
   /* For mobile phones: */
   .head {
     /* set top padding to 50% */
-    padding-top: 50%;
+    padding-top: 90vh;
   }
 }
