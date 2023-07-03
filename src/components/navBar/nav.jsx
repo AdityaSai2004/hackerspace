@@ -27,7 +27,7 @@ const Navbar = (props) => {
           </a>
         </div>
         <div className="navbar__center">
-          <img src={logo} alt="logo" style={style} />
+          <img className="navbar__pic" src={logo} alt="logo" style={style} />
         </div>
         <div className="navbar__right">
           <span

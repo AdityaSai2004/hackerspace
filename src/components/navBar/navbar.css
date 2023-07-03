@@ -190,9 +190,11 @@
 
   .navbar__left {
     margin-bottom: 10px;
-    /* display: none; */
+    display: none;
   }
-
+  .navbar__pic {
+    display: none;
+  }
   .navbar__center {
     margin-bottom: 10px;
     display: block;
