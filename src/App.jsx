@@ -12,7 +12,7 @@ import About from './components/about/AboutPage'
 
 export default function App() {
   let title='HackerSpace'
-  let landingPageContent='Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea repudiandae nam vitae! Est aperiam saepe quae iste eius reprehenderit.'
+  let landingPageContent = "Welcome to HackerSpace, an extraordinary one-day workshop that will immerse you in the captivating realms of Bug Bounty, OSINT, and Cyber Forensics. This unique and hands-on cybersecurity event has been meticulously designed to equip participants with the latest knowledge and practical skills in these specialized domains."
   return (
     <div className="wrapper" style={{ width: "100vw", height: "100vh" }}>
       {/* for now commenting the model */}

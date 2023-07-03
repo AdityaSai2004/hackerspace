@@ -7,7 +7,7 @@ const Sponsors = () => {
             
             <div className='sponsors'>
                 <div className="span" id="title">SPONSORS</div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores vitae at quod soluta quam. Tempora illum sunt repellat doloribus accusamus.</p>
+                <p>Our esteemed sponsors,who empower us to bring the world of cybersecurity to life at HackerSpace.</p>
 
                 <div className="cards">
                     <div className="box"> </div>

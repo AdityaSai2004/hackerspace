@@ -5,7 +5,8 @@ const AboutPage = (props) => {
 
 
     };
-    const aboutStyle = { display: 'flex',
+    const aboutStyle = { 
+    display: 'flex',
     flexDirection:'column',
     height: '100vh',
     textAlign: 'start',
@@ -42,7 +43,14 @@ const AboutPage = (props) => {
 
     } 
     let temp=props.name
-    let content=props.content
+    // let content=props.content
+    let content = `HackerSpace is a one-day workshop that will teach you about Bug Bounty, OSINT, and Cyber Forensics. You will learn through interactive sessions, demonstrations, and hands-on exercises. The highlight of the workshop is the Capture-The-Flag (CTF) challenge, where you will test your hacking skills against other participants.
+
+    Here are some of the key points of the workshop:
+
+    - Learn about Bug Bounty, OSINT, and Cyber Forensics
+    - Gain hands-on experience in these specialized domains
+    - Participate in a thrilling Capture-The-Flag (CTF) challenge`;
 
 
     return (

@@ -16,6 +16,7 @@
     align-content: center;
     align-items: center;
     background-color: transparent;
+    overflow: auto;
 }
 #headline {
     font-family:'MrRobot', Times, serif;
@@ -28,6 +29,7 @@
     background-color: transparent;
 }
 #intro-para {
+    padding: 2%;
     width: 50%;
     background-color: transparent;
     text-align: center;

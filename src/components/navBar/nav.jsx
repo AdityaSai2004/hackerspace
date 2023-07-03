@@ -22,7 +22,7 @@ const Navbar = (props) => {
           {props.currentPage.toString().padStart(2, '0')}
         </span>
         <span className="navbar__separator"> /</span>
-        <span className={`navbar__total`}> 04</span>  
+        <span className={`navbar__total`}> 05</span>  
       </div>
     </div>
 

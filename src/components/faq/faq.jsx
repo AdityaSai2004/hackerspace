@@ -6,23 +6,29 @@ const Data = [
   {
     Question: "Does the event require any pre-requisites knowledge?",
     Answer:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "No prior experience or knowledge in cybersecurity is required to attend HackerSpace. The event is designed to provide a comprehensive learning experience for participants at all levels, from beginners to advanced learners.",
   },
   {
-    Question: "When will the event take place?",
+    Question:"Can I collaborate with others during the CTF challenge?",
     Answer:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Yes, collaboration among participants is encouraged during the CTF challenge. You can form team of 1-3 participant(s) and work together to solve the challenges. It's a great opportunity to learn from each other and enhance your problem-solving skills."
   },
   {
-    Question: "What is the entry fee to be paid?",
+    Question: "Is there a registration fee for HackerSpace?",
     Answer:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Yes, there is a registration fee of Rs.150/-  for HackerSpace. "
   },
   {
-    Question: "Where is the meeting place?",
+    Question: "Will certificates be provided to participants?",
     Answer:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Yes, certificates of participation will be provided to all attendees of HackerSpace. These certificates will serve as a recognition of your active participation and engagement in the event." 
   },
+  {
+    Question: "What should I bring with me to HackerSpace?",
+    Answer:
+    "Participants are encouraged to bring their own laptops for the hands-on activities and challenges. Additionally, it is recommended to bring a notebook and pen for taking notes during the workshop sessions."
+  },
+  
 ];
 const Accordion = () => {
   const [selected, setSelected] = useState(null);
