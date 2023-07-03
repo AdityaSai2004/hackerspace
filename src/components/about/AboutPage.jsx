@@ -3,7 +3,6 @@ const AboutPage = (props) => {
     const blackBackgroundStyle = {
     backgroundColor: 'black',
 
-
     };
     const aboutStyle = { 
     display: 'flex',

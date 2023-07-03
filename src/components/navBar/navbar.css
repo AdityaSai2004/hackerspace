@@ -187,6 +187,7 @@
 
   .navbar__left {
     margin-bottom: 10px;
+    display: none;
   }
 
   .navbar__name {

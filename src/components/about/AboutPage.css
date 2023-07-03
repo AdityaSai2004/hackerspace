@@ -7,3 +7,7 @@
     font-family: 'Poppins';
     src: url(./fonts/Poppins.ttf);
 }
+
+body{
+    overflow: auto;
+}

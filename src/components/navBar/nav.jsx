@@ -11,11 +11,11 @@ const Navbar = (props) => {
     <div>
     <div className="navbar">
       <div className="navbar__left">
-      <Link href='/'>
+      <a href='https://cyscomvit.com/'>
         <span className="navbar__logo">CY</span>
         <span className="navbar__slogo">S</span>
         <span className="navbar__logo">COM</span>
-      </Link>
+      </a>
       </div>
       <div className="navbar__right">
         <span className={`navbar__index ${props.currentPage ? 'underline' : ''}`}>
