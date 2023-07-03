@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'MrRobot';
-    src: url(./fonts/mrRobot.ttf);
+  font-family: "MrRobot";
+  src: url(./fonts/mrRobot.ttf);
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url(./fonts/Poppins.ttf);
+  font-family: "Poppins";
+  src: url(./fonts/Poppins.ttf);
 }
 
-body{
-    overflow: auto;
-    overflow-x: hidden;
+body {
+  overflow: auto;
+  overflow-x: hidden;
 }

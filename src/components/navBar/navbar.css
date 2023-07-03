@@ -190,17 +190,17 @@
 
   .navbar__left {
     margin-bottom: 10px;
-    display: none;
+    /* display: none; */
   }
 
   .navbar__center {
     margin-bottom: 10px;
     display: block;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
-    position:sticky;
+    position: sticky;
 
-    display: none;
+    /* display: none; */
   }
 
   .navbar__name {
@@ -213,7 +213,7 @@
   }
 
   .navbar__right {
-    display: none;
+    /* display: none; */
   }
 
   .nav_backwardButton {
