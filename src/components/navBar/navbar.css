@@ -15,7 +15,7 @@
   backdrop-filter: blur(0.5rem);
 }
 
-.imgAtMobile{
+.imgAtMobile {
   display: none;
 }
 
@@ -51,7 +51,7 @@
   text-align: left;
   color: #ffffff;
   background-color: transparent;
-  background-image: src('./logo-red.png');
+  background-image: src("./logo-red.png");
 }
 
 .navbar__slogo {
@@ -190,16 +190,25 @@
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .imgAtMobile{
-    width:50%;
-    height:50%;
+  .imgAtMobile {
+    width: 30%;
+    height: 30%;
     display: block;
+    margin: auto;
+    margin-top: 200px;
   }
-
-  .divAtMobile{
-    padding:0;
-    margin:0;
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+  }
+  .divAtMobile {
+    padding: 0;
+    margin: 0;
     /* display: none; */
+    height: max-content;
   }
 
   .navbar {
@@ -207,7 +216,7 @@
     align-items: flex-start;
     padding: 10px 20px;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     display: none;
   }
 
@@ -237,8 +246,6 @@
     margin-bottom: 10px;
   }
 
-  
-
   .nav_backwardButton {
     width: 25px;
     height: 25px;
@@ -252,8 +259,6 @@
   }
 }
 
-
-img{
+img {
   z-index: 1000;
 }
-
