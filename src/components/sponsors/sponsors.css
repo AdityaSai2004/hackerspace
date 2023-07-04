@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
@@ -40,19 +40,19 @@
   color: #fc0101;
 
   margin-bottom: 2rem;
-  margin-top: 75vh;
+  margin-top: 45rem;
 }
 
 .sponsors p {
   font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21.4235px;
-    line-height: 160%;
-    text-align: center;
-    letter-spacing: 0.1em;
-    /* width: 33.33vw; */
-    margin-bottom: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21.4235px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  /* width: 33.33vw; */
+  margin-bottom: 3rem;
 }
 
 .cards {
@@ -64,7 +64,6 @@
 .box {
   /* height: 50vh;
   width: 50vw; */
-
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.05);
   border: 2px solid #ffffff;
@@ -86,43 +85,41 @@
 
 .plat-spon {
   align-items: center;
-  padding: 3.1%;
+  padding-top: 2%;
 }
 
-/* @media (max-width: 1920px) {
-  /* .title{
+@media (max-width: 1920px) {
+  .title {
     /* if changing this value, it causes trouble in faq section */
-    /* margin-top: 0vh;
-  } */
+    margin-top: 0vh;
+  }
 
-  /* .cards {
+  .cards {
     flex-direction: column;
     align-items: center;
-  } */
+  }
 
-  /* .box {
+  .box {
     margin-bottom: 2rem;
     width: 50vw;
-  } */
+  }
 
-  /* .sponsors p {
+  .sponsors p {
     width: auto;
     height: 100vh;
     /* margin-top: 0.5em; */
-    /* padding-top: 2em;
-    justify-content: center; */
-  /* } */ */
-  /* .plat-spon {
+    padding-top: 2em;
+    justify-content: center;
+  }
+  .plat-spon {
     display: flex;
     align-items: center;
     padding: 2%;
-  } */ */
-/* } */ */
-
+  }
+}
 
 @media (max-width: 1440px) {
-
-  .title{
+  .title {
     margin-top: 45vh;
   }
 
@@ -150,12 +147,12 @@
 @media (max-width: 768px) {
   #title {
     font-size: 3.2rem;
-    margin-top: 7vh;
+    margin-top: 10rem;
   }
 
   .box {
-    width: 33vw;
-    height: 28vh;
+    width: 80vw;
+    height: 30vh;
   }
 
   .center {

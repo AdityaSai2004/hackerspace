@@ -56,7 +56,6 @@ body {
 }
 
 .accordion {
-
   width: 100%;
   max-width: 700px;
   background: #94000000;
@@ -82,7 +81,7 @@ body {
 
 .head {
   /* change 1 */
-  padding-top: 12%;
+  padding-top: 20%;
 }
 
 .circle {
@@ -131,10 +130,9 @@ body {
 }
 
 @media only screen and (max-width: 970px) {
-
   /* For mobile phones: */
   .head {
     /* set top padding to 50% */
-    padding-top: 0vh;
+    padding-top: 15rem;
   }
 }

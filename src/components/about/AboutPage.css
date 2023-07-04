@@ -9,12 +9,55 @@
 }
 
 body {
-  overflow:auto;
+  overflow: auto;
   overflow-x: auto;
   overflow-y: auto;
   text-align: center;
 }
+.logo {
+  display: none;
+}
+.res {
+  position: relative;
+  margin-bottom: 5rem !important;
+}
 
-.register {
-  padding-bottom: 5%;
+.headStyle {
+  color: #fc0101;
+  font-size: 5rem;
+  font-family: MrRobot;
+  font-weight: 400;
+  margin: 0;
+  display: block;
+  padding-top: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .textStyle {
+    color: white;
+    font-size: 18;
+    font-family: "Poppins";
+    font-weight: "400";
+    width: "70%";
+    display: "block";
+    border: "1px solid white";
+    /* margin: "0 1rem 4rem 1rem"; */
+  }
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+  .headStyle {
+    color: #fc0101;
+    font-size: 2rem;
+    font-family: MrRobot;
+    font-weight: 400;
+    margin: 0;
+    display: block;
+    padding-top: 2rem;
+  }
 }
