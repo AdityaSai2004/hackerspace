@@ -61,7 +61,7 @@ const AboutPage = (props) => {
   return (
     <>
       <div className="apps" style={blackBackgroundStyle}>
-        <div className="about" style={aboutStyle}>
+        <div className="about">
           <div
             style={{
               justifyContent: "space-between",

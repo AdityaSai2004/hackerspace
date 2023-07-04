@@ -32,7 +32,20 @@ body {
   padding-top: 2rem;
 }
 
-@media screen and (max-width: 500px) {
+.about{
+  display: block;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: start;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
   .textStyle {
     color: white;
     font-size: 18;
@@ -43,6 +56,12 @@ body {
     border: "1px solid white";
     /* margin: "0 1rem 4rem 1rem"; */
   }
+
+  .about{
+    min-height: 120vh;
+    
+  }
+
   .logo {
     margin-left: auto;
     margin-right: auto;
