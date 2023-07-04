@@ -14,7 +14,7 @@ const Sponsors = () => {
         </p>
 
         <h1 className="plat-spon">Platinum</h1>
-        <h1 className="plat-spon"> sponsor</h1>
+        {/* <h1 className="plat-spon"> sponsor</h1> */}
         <div className="cards">
           <div className="box">
             <img src={AECC} alt="AECC" className="images" />
