@@ -12,7 +12,7 @@ const Data = [
   {
     Question: "Can I collaborate with others during the CTF challenge?",
     Answer:
-      "Yes, collaboration among participants is encouraged during the CTF challenge. You can form team of 1-2 participant(s) and work together to solve the challenges. It's a great opportunity to learn from each other and enhance your problem-solving skills.",
+      "Yes, collaboration among participants is encouraged during the CTF challenge. You can form team of 1-3 participant(s) and work together to solve the challenges. It's a great opportunity to learn from each other and enhance your problem-solving skills.",
   },
   {
     Question: "Is there a registration fee for HackerSpace?",
