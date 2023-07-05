@@ -13,8 +13,8 @@ const Sponsors = () => {
           cybersecurity to life at HackerSpace.
         </p>
 
-        <h1 className="plat-spon">Platinum</h1>
         <div className="cards">
+        <h1 className="plat-spon">Platinum</h1>
           <div className="box">
             <img src={AECC} alt="AECC" className="images" />
           </div>
