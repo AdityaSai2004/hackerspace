@@ -1,6 +1,7 @@
 import React from "react";
 import "./sponsors.css";
 import AECC from "./AECC.png";
+import Sponsor from "./sponsor_new.jpg";
 const Sponsors = () => {
   return (
     <>
@@ -14,9 +15,9 @@ const Sponsors = () => {
         </p>
 
         <div className="cards">
-        <h1 className="plat-spon">Platinum</h1>
+          <h1 className="plat-spon">Platinum</h1>
           <div className="box">
-            <img src={AECC} alt="AECC" className="images" />
+            <img src={Sponsor} alt="AECC" className="images" />
           </div>
           {/* <div className="box"> </div>
                     <div className="box"> </div> */}
