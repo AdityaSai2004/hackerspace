@@ -2,24 +2,25 @@ import React from 'react';
 import './Footer.css';
 import backwardIcon from './Vector 522.png'; // Replace with the actual path to your backward icon image
 import forwardIcon from './Vector 521.png'; // Replace with the actual path to your forward icon image
-
+import { Link } from 'react-router-dom'
+ 
 const Footer = (props) => {
 
     return (
         <div className="container">
             <div className="nav_button">
                 
-                <a href={`${props.urlb}`} className="nav_backwardButton">
+                <Link to={`${props.urlb}`} className="nav_backwardButton">
                 
                     <img src={backwardIcon} alt="Backward Icon" className="navbar_buttonIconback" />
                 
-                </a>
+                </Link>
 
-                <a href={`${props.urlf}`} className="nav_forwardButton">
+                <Link to={`${props.urlf}`} className="nav_forwardButton">
                 
                     <img src={forwardIcon} alt="Forward Icon" className="navbar_buttonIconforward" />
                 
-                </a>
+                </Link>
 
             </div>
         </div>
